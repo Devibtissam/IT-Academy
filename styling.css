@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Space+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --SlantedText: "Space Mono", monospace;
+  --PrimaryColor: #1d3557;
+  --SecondaryColor: #f1faee;
+  --mainWhite: #fff;
+  --mainTransition: all 0.3s ease-in-out;
+  --letterSpacing: 0.5rem;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1, 5;
+}
+
+/* helper/utility classes */
+.clr {
+  clear: both;
+}
+
+.container {
+  width: 80%;
+  /* background-color: wheat; */
+  margin: 0 auto;
+}
+.pd-y {
+  padding: 80px 0px;
+}
+/* global */
+a {
+  text-decoration: none;
+}
+
+/* navigation section */
+.navigation-section {
+  background-color: var(--SecondaryColor);
+  height: 55px;
+}
+
+.nav-items {
+  float: right;
+  list-style: none;
+}
+.logo {
+  display: inline-block;
+  padding: 0.95rem;
+  color: var(--PrimaryColor);
+  font-weight: bolder;
+
+  font-size: 1.5rem;
+}
+.nav-items li {
+  display: inline-block;
+  margin-right: 0.95rem;
+  padding: 0.95rem;
+}
+.nav-items li a {
+  color: var(--PrimaryColor);
+  text-transform: capitalize;
+  padding: 0.55rem;
+  font-family: bold;
+}
+.nav-items li a:hover {
+  background-color: var(--PrimaryColor);
+  color: var(--mainWhite);
+  transition: var(--mainTransition);
+}
+/* hero section */
+
+.banner-content {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/hero-webdev.jpg") center/cover no-repeat fixed;
+  position: relative;
+}
+
+.banner-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 0.55rem;
+  text-align: center;
+}
+.banner-title {
+  text-transform: uppercase;
+
+  margin-bottom: 0.66rem;
+  color: var(--mainWhite);
+}
+
+.default-btn {
+  padding: 0.85rem;
+  border-radius: 10px;
+  background-color: var(--PrimaryColor);
+  border: none;
+  margin-left: 5px;
+  margin-top: 16px;
+  color: var(--mainWhite);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.default-btn:hover {
+  background-color: var(--SecondaryColor);
+  color: var(--PrimaryColor);
+  transition: var(--mainTransition);
+}
+
+/* First home section */
+
+.title-section {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--PrimaryColor);
+  font-family: bold;
+  margin-bottom: 5rem;
+}
+
+.section-items {
+  width: 100%;
+}
+.section-item {
+  width: 33%;
+  height: 190px;
+  float: left;
+  text-align: center;
+  border: 2px solid var(--SecondaryColor);
+  padding: 2rem;
+}
+.mg {
+  margin: 0 0.5%;
+}
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--PrimaryColor);
+}
+.desc-item {
+  font-family: var(--SlantedText);
+  text-align: center;
+}
+
+.section-item:hover {
+  background-color: var(--SecondaryColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: var(--mainTransition);
+}
+
+/* second home section */
+
+.testi-items {
+  width: 100%;
+}
+.testi-item {
+  width: 33%;
+  float: left;
+  text-align: center;
+
+  padding: 2rem;
+  border: 2px solid var(--SecondaryColor);
+}
+.img-container {
+  width: 50%;
+  margin: 0 auto;
+}
+.testi-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.testi-text {
+  margin-top: 2rem;
+  font-family: var(--SlantedText);
+}
+
+.testi-item:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: var(--SecondaryColor);
+  transition: var(--mainTransition);
+}
+
+/* footer section */
+
+footer {
+  background-color: var(--PrimaryColor);
+}
+
+.footer-item {
+  width: 33%;
+  float: left;
+  padding: 2rem;
+}
+
+.sm-icon li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.logo-page {
+  font-family: bold;
+  color: var(--SecondaryColor);
+  font-size: 1.2rem;
+}
+.footer-desc {
+  font-family: var(--SlantedText);
+  font-size: 1rem;
+  padding: 1.5rem 0;
+  color: var(--SecondaryColor);
+}
+.icon-ft {
+  color: var(--mainWhite);
+  font-size: 1.5rem;
+}
+.title-footer {
+  color: var(--mainWhite);
+}
+.tel-footer,
+.menu-footer {
+  padding: 1.2rem;
+  list-style: none;
+  color: var(--mainWhite);
+  font-family: var(--SlantedText);
+  text-transform: capitalize;
+}
+.menu-footer li a {
+  color: var(--mainWhite);
+  display: block;
+  padding: 0.2rem;
+}
